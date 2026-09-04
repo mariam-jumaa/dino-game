@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas Dino Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <h1>Canvas Dino Game</h1>
+ 
+    <div class="info-bar">
+      <div class="score-item">Score: <strong id="score">0</strong></div>
+      <div class="score-item">High Score: <strong id="highScore">0</strong></div>
+    </div>
+ 
+    <canvas id="gameCanvas" width="900" height="270"></canvas>
+ 
+    <div class="controls">
+      <button id="resetBtn" type="button">Reset Game</button>
+    </div>
+ 
+    <div class="instructions">
+      <p><strong>Instructions:</strong></p>
+      <p>Press <strong>Space</strong> or <strong>Arrow Up</strong> to start and jump.</p>
+      <p>If the dinosaur hits a cactus, the game ends.</p>
+    </div>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+ 
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background: #ececec;
+  color: #000;
+  text-align: center;
+  overflow: hidden;
+}
+ 
+.page {
+  width: min(96vw, 1120px);
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+h1 {
+  margin: 4px 0 12px;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+ 
+.info-bar {
+  width: min(92vw, 980px);
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(18px, 2vw, 26px);
+  line-height: 1.2;
+}
+ 
+.score-item {
+  font-weight: 400;
+}
+ 
+.score-item strong {
+  font-weight: 700;
+}
+ 
+#gameCanvas {
+  display: block;
+  width: min(92vw, 980px);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 3px solid #000;
+}
+ 
+.controls {
+  margin-top: 12px;
+}
+ 
+#resetBtn {
+  min-width: 170px;
+  padding: 10px 22px;
+  font-size: clamp(18px, 1.8vw, 24px);
+  border: 2px solid #9a9a9a;
+  border-radius: 4px;
+  background: #f0f0f0;
+  color: #111;
+  cursor: pointer;
+}
+ 
+.instructions {
+  margin-top: 12px;
+  font-size: clamp(14px, 1.6vw, 19px);
+  line-height: 1.45;
+  color: #222;
+}
+ 
+.instructions p {
+  margin: 2px 0;
+}
+ 
+.instructions p:first-child {
+  font-size: clamp(15px, 1.7vw, 20px);
+  font-weight: 700;
+}
